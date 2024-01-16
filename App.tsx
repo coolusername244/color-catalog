@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FlatList, StyleSheet, View } from 'react-native';
+import { FlatList, StyleSheet, Alert } from 'react-native';
 import ColorButton from './components/ColorButton';
 import defaultColors from './data/defaultColors.json';
 import ColorForm from './components/ColorForm';
@@ -9,7 +9,9 @@ export default function App() {
 
   return (
     <>
-      <ColorForm />
+      <ColorForm
+        onNewColor={newColor => Alert.alert(`New color ${newColor}`)}
+      />
       <FlatList
         style={[styles.container, { backgroundColor }]}
         data={defaultColors}
