@@ -1,0 +1,29 @@
+import React from 'react';
+import { StyleSheet, View, TextInput, Button } from 'react-native';
+
+const ColorForm = () => {
+  return (
+    <View style={styles.container}>
+      <TextInput style={styles.txtInput} autoCapitalize="none" />
+      <Button title="add" />
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    marginTop: 50,
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  txtInput: {
+    flex: 1,
+    borderWidth: 2,
+    fontSize: 20,
+    margin: 5,
+    borderRadius: 5,
+    padding: 5,
+  },
+});
+
+export default ColorForm;
