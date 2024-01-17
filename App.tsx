@@ -10,7 +10,11 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={ColorList} />
+        <Stack.Screen
+          name="Home"
+          options={{ title: 'Color List' }}
+          component={ColorList}
+        />
         <Stack.Screen name="Details" component={ColorDetails} />
       </Stack.Navigator>
     </NavigationContainer>
