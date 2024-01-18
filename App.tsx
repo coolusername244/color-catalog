@@ -4,12 +4,17 @@ import ColorDetails from './components/ColorDetails';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-const Stack = createNativeStackNavigator();
+type StackParamList = {
+  Home: undefined;
+  Details: { color: string };
+};
+
+const Stack = createNativeStackNavigator<StackParamList>();
 
 const App = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator initialRouteName="Home">
         <Stack.Screen
           name="Home"
           options={{ title: 'Color List' }}
