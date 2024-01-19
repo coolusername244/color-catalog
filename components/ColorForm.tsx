@@ -33,9 +33,9 @@ const ColorForm: FC<ColorFormProps> = ({ onNewColor }) => {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 50,
     flexDirection: 'row',
     alignItems: 'center',
+    backgroundColor: 'white',
   },
   txtInput: {
     flex: 1,
