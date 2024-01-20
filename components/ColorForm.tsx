@@ -1,9 +1,6 @@
 import React, { useState, useRef, FC } from 'react';
 import { StyleSheet, View, TextInput, Button } from 'react-native';
-
-type ColorFormProps = {
-  onNewColor: (arg0: string) => void;
-};
+import { ColorFormProps } from '../types';
 
 const ColorForm: FC<ColorFormProps> = ({ onNewColor }) => {
   const [inputValue, setInputValue] = useState('');

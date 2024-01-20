@@ -1,10 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Text, TouchableHighlight } from 'react-native';
-
-type ColorButtonProps = {
-  backgroundColor: string;
-  onPress: (arg0: string) => void;
-};
+import { ColorButtonProps } from '../types';
 
 const ColorButton: React.FC<ColorButtonProps> = ({
   backgroundColor,
