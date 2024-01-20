@@ -3,11 +3,7 @@ import ColorList from './components/ColorList';
 import ColorDetails from './components/ColorDetails';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
-type StackParamList = {
-  Home: undefined;
-  Details: { color: string };
-};
+import { StackParamList } from './types';
 
 const Stack = createNativeStackNavigator<StackParamList>();
 
