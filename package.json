@@ -15,6 +15,7 @@
     "@react-navigation/native-stack": "^6.9.17",
     "@react-navigation/stack": "^6.3.20",
     "@types/uuid": "^9.0.7",
+    "color": "^4.2.3",
     "expo": "~49.0.15",
     "expo-status-bar": "~1.6.0",
     "react": "18.2.0",
@@ -28,6 +29,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
+    "@types/color": "^3.0.6",
     "@types/react": "~18.2.14",
     "typescript": "^5.1.3"
   },
